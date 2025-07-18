@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* メインコンテンツ */
+    #main {
+    margin: 50px auto;
+    padding: 30px;
+    width: 1000px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+      
+    }
+  h2 {
+        text-align: center;
+    }
+    /* チャット表示エリア */
+    #chatWindow {
+    color: rgb(0,0,0);
+      flex-grow: 1;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+  
+    /* チャットメッセージ */
+    .message {
+      margin-bottom: 10px;
+      max-width: 60%;
+      padding: 8px 12px;
+      border-radius: 15px;
+      clear: both;
+    }
+  
+    .message.user {
+      background-color: #DCF8C6;
+      float: right;
+      text-align: right;
+    }
+  
+    .message.other {
+      background-color: #eee;
+      float: left;
+      text-align: left;
+    }
+  
+    /* 入力フォーム */
+    #inputForm {
+      display: flex;
+    }
+    #inputForm input[type="text"] {
+      flex-grow: 1;
+      padding: 8px;
+      font-size: 16px;
+    }
+    #inputForm button {
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+    
